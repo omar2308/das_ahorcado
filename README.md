@@ -1,4 +1,4 @@
-![](https://github.com/kleer-la/template2_6_5/workflows/Ruby/badge.svg)
+![](https://github.com/omar2308/das_ahorcado/workflows/Ruby/badge.svg)
 
 para ver el reporte de analisis de codigo:
 
