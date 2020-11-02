@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <h1 id="nombre">Ahorcado</h1>
+    <h2>_</h2>
+    <br>
+    <h2 id="mensaje"><%= @mensaje%></h2>
+    <form action="/juego" method="post">
+        <input id="letra" type="text" value="" name="letra"/>
+        <input id="botonAdivinar" type="submit" value="Adivinar"/>
+    </form>
+</body>
+</html>
