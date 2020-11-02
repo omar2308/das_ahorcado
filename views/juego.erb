@@ -6,13 +6,14 @@
     <title>Ahorcado</title>
 </head>
 <body>
-    <h1 id="nombre">Ahorcado</h1>
-    <h2>_</h2>
+    <h1 id="titulo">Ahorcado</h1>
+    <h2 id="guion">_</h2>
     <br>
     <h2 id="mensaje"><%= @mensaje%></h2>
     <form action="/juego" method="post">
         <input id="letra" type="text" value="" name="letra"/>
         <input id="botonAdivinar" type="submit" value="Adivinar"/>
     </form>
+    <h1 id="msjFinal"><%= @mensajefin%></h1>
 </body>
 </html>

@@ -4,7 +4,7 @@ When("inicio la aplicacion") do
 end
 
 Then("el titulo es {string}") do |titulo|
-    expect(page).to have_css "h1", text: titulo
+    expect(page).to have_css "h1#titulo", text: titulo
 end
 
 When("inicio del juego") do
@@ -41,3 +41,8 @@ When("le doy clic en {string}") do |string|
 Then("me muestra {string}") do |valor|
     expect(page).to have_css "h2#mensaje", text: valor
 end
+
+Then("mensaje final es {string}") do |string|
+    expect(page).to have_css "h1#msjFinal", text: string
+end
+
