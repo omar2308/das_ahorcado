@@ -2,18 +2,16 @@ require 'sinatra'
 require './config'
 require './lib/ahorcado.rb'
 
-get '/' do
+ADIVINAR = 'A'
+JUEGO= Ahorcado.new(ADIVINAR)
+get '/' do    
     erb :index
 end
 
 post '/juego' do
-
-    
     @letra = params['letra']
-    @adivinar = 'A'
-
-    juego = Ahorcado.new(@letra)
-    if juego.adivinar(@adivinar) then
+    
+    if JUEGO.adivinar(@letra) then
         @mensaje = 'Correcto'
         @mensajefin = "Juego Terminado, Ganaste!"
     else
