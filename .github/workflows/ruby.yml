@@ -18,7 +18,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      DISCORD_WEBHOOK: https://discordapp.com/api/webhooks/749248799347703858/LORKpdpY_PS81rqsw0twQJvV5Lcjnc1TkA_8Ncs4d4egDT9EBfNvy1jqFG-zgitTPkNP
+      DISCORD_WEBHOOK: https://discordapp.com/api/webhooks/772819345696227389/4-gJtiTOB_b5L2Y-4BrOhlAZWoWd47O1iKLhpt6_H_tTHAnUHnt5VLafFyjJ0n3fooLW
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
